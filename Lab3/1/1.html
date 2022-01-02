@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='1.css'/>
+<title>
+    1
+</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<form>
+<ul>
+<li>
+    <label for="id">User id:</label>
+</li>
+<li>
+    <input type="text" name="userid" size="12"/>
+    <p>Required and must be of length 5 to 12</p>
+</li>
+
+<li>
+    <label for="passid">Password:</label>
+</li>
+<li>
+    <input type="password" name="passid" size="12"/>
+    <p>Required and must be of length 7 to 12</p>
+</li>
+<li>
+    <label for="username">Name:</label>
+</li>
+<li>
+    <input type="text" name="username" size="50" />
+    <p>Required and alphabets only</p>
+</li>
+<li>
+    <label for="address">Address:</label>
+</li>
+<li>
+    <input type="text" name="address" size="50" />
+    <p>Optional.</p>
+</li>
+<li>
+    <label for="country">Country:</label>
+</li>
+<li>
+    <select name="country">
+<option>
+    
+    (Please select a country)
+<option>Bangladesh</option>
+</option>
+</select>
+<p>Required. Must select a country</p>
+</li>
+<li>
+    <label for="zip">ZIP Code:</label>
+</li>
+<li>
+    <input type="text" name="zip" />
+    <p>Required. Must be numeric only</p>
+</li>
+<li>
+    <label for="email">Email:</label>
+</li>
+<li>
+    <input type="text" name="email"/>
+    <p>Required. Must be a valid email</p>
+</li>
+<li>
+    <label id="gender">Sex:</label>
+</li>
+<li>
+    <input type="radio" name="male" value="Male" />
+    <span>Male</span>
+</li>
+<li>
+    <input type="radio" name="male" value="Female" />
+    <span>Female</span>
+    <p>Required.</p>
+</li>
+<li>
+    <label>Language:</label>
+</li>
+<li>
+    <input type="checkbox"/>
+    <span>English</span>
+</li>
+<li>
+    <input type="checkbox"/>
+    <span>Non English</span>
+    <p>Required.</p>
+</li>
+<li>
+    <label for="about">About:</label>
+</li>
+<li>
+    <textarea  width: 100px;>
+    </textarea>
+    <p>Optional.</p>
+</li>
+<li>
+    <div>
+        <h4><input type="submit" name="submit"/></h4>
+    </div>
+</li>
+</ul>
+</form>
+</body>
+</html>

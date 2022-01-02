@@ -1,0 +1,12 @@
+h3{
+    text-decoration: underline;
+    color:rgb(139, 131, 196);
+  }
+  
+table{
+    color:white; 
+    background-color: rgb(139, 131, 196);  
+  }
+.table1{
+  border: 2px rgb(31, 31, 112) solid;
+}

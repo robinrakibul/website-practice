@@ -1,0 +1,16 @@
+form li{
+    list-style: none;
+}
+form ul li label{
+    float: left;
+    } 
+form ul li input, select, span{
+    float: left;
+}   
+form textarea{
+    float: left;
+}
+p {
+    color: red;
+    font-weight: bold;
+}

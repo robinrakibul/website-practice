@@ -1,0 +1,29 @@
+.address{
+  padding-right: 115px;
+  }
+
+.main{
+  background-color:#56cca1;
+  border: black;
+  padding: 7px;
+}
+
+.address{
+  margin-left: 100px;
+}
+
+.row{
+display: flex;
+}
+
+.column{
+flex: 50%;
+padding: 5px;
+
+}
+
+.bottom{
+  background-color:#D1DBD7;
+  padding: 20px;
+  text-align:center;
+}

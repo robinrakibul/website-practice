@@ -1,0 +1,46 @@
+<?php
+$connect = mysqli_connect("localhost", "root", "", "fall2020");
+if($connect === false){
+    die("ERROR: Could not connect. " . mysqli_connect_error());
+}
+
+$sql = "SELECT * FROM user WHERE name='robin'";
+if($result = mysqli_query($connect, $sql)){
+    if(mysqli_num_rows($result) > 0){
+        echo "<table>";
+            echo "<tr>";
+            echo "<th>Name</th>";
+            echo "<th>Email</th>";
+            echo "<th>Password</th>";
+            echo "<th>IP Address</th>";
+            echo "<th>URL</th>";
+            echo "<th>Age</th>";
+            echo "<th>Gender</th>";
+            echo "<th>Mobile</th>";
+            echo "<th>Brief Info</th>";
+            echo "</tr>";
+        while($row = mysqli_fetch_array($result)){
+            echo "<tr>";
+            echo "<td>" . $row['name'] . "</td>";
+            echo "<td>" . $row['email'] . "</td>";
+            echo "<td>" . $row['password'] . "</td>";
+            echo "<td>" . $row['ip_address'] . "</td>";
+            echo "<td>" . $row['url'] . "</td>";
+            echo "<td>" . $row['age'] . "</td>";
+            echo "<td>" . $row['gender'] . "</td>";
+            echo "<td>" . $row['mobile'] . "</td>";
+            echo "<td>" . $row['briefinfo'] . "</td>";
+            echo "</tr>";
+        }
+        echo "</table>";
+        mysqli_free_result($result);
+    } else{
+        echo "No records found";
+    }
+} else{
+    echo "ERROR: Could not able to execute $sql. " . mysqli_error($connect);
+}
+
+mysqli_close($connect);
+
+?>

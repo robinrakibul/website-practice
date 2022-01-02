@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='3.css'/>
+    <title>3</title>
+</head>
+
+<body>
+	<div class="main">
+		<h2>Workshop Registration</h2>
+		<label class="list" for="main">More action</label>
+		<select class="select">
+			<option value="0"></option>
+			<option value="1">1</option>
+		</select>
+		
+	</div>
+		
+	<div>
+			<p><u>Register now while seats are available!</u></p>
+			
+      <form>
+
+		<div class="row">
+
+				<div class="column">
+				<label for="firstname">First Name:<span>*</span>
+        </label>
+			  <input type="text" required="required"> 
+        <br>
+        <br>
+			
+		  <label for="lastname">Last Name:<span>*</span>
+      </label>
+	  	<input type="text" required="required"> 
+			<br><br>
+				<label for="company">Company/Institutions:<span>*</span> </label>
+		  <input type="text">
+			<br>
+      <br>
+					
+			<label for="address">Address<span>*</span> 
+      </label>
+
+			<textarea id="address" class="address" required="required" rows="3" cols="25"> </textarea>
+			<br>
+      <br>
+				
+				<label for="city">City</label>
+		  <input type="text"> 
+			<br>
+      <br>
+					
+				<label for="state">State/Province/Region </label>
+		<select class="state" required="required" >
+			<option>State</option>
+			<option>Province</option>
+			<option>Region</option>
+			</select>
+		<br>
+    <br>	
+					
+				<label for="country">Country: </label>
+		<select class="country" name="country" required="required">
+			    <option>India</option>
+			</select>
+		<br>
+    <br>
+				
+				<label for="em">Email:</label>
+	  <input type="email" id="em"  required="required">
+		<br><br>
+					
+				<label for="phoneno">Phone:</label>
+	  <input type="number" id="phoneno"  required="required" name="phn">
+		<br><br>
+	    </div>
+				
+  
+  <div class="column">
+				
+				<label> 
+          <p><u>Lunch</u></p> 
+        </label>
+				<br>
+				
+				<label for="meal">Meal Preference: </label>
+		<select class="meal" name="meal" required="required">
+			<option>Vegetarian</option>
+		</select>
+		<br>
+														  
+    <label> 
+      <p><u>Payment Details</u></p> 
+    </label>
+				<br>								  
+        <label for="payment">Payment Method:</label>
+        <br>
+        <input type="checkbox" name="payment" id="payment" value="cash">
+        <label for="cash" class="cash">Cash
+          <br>
+        </label>
+					   
+      <input type="checkbox" name="cheque" id="cheque" value="cheque">
+      <label for="cheque">
+        Cheque<br>
+      </label>
+						 <input type="checkbox" name="demanddr" value="dd">
+      <label for="demanddr">
+        Demand Draft
+      </label>
+		<br>
+    <br>
+					 
+		<label for="dd">
+    DD/Cheque No. 
+    </label>
+    
+		<input type="number" id="dd" name="dd">
+			<p></p>
+
+		<label for="bank">
+      Drawn On(bank Name) 
+    </label>
+
+		<input type="text" id="bank" name="bank">
+		<br><br>
+				
+																								  <label for="pa">Payable at </label>
+		<input type="text" id="pa" name="pa"   size="20" maxlength="20" style="margin-left: 14.6%;">
+		<br><br> <br>
+		</div>		
+  </div>
+			
+				
+  <div class="bottom">
+        <label class="submit"> 
+          <input type="submit" value="Submit"> 
+        </label>
+        <label class="reset"> 
+          <input type="reset" value="Reset"> 
+        </label>
+  </div>
+				
+  </form>
+</div>
+
+</body>
+</html>
